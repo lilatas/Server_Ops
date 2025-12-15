@@ -1,4 +1,8 @@
 #!/bin/bash
+#: Title        : Nginx installer
+#: Date         : 20251215
+#: Author       : 1.0
+#: Description  : Install Nginx for WEB at RHEL
 
 echo "Start to install Nginx"
 
