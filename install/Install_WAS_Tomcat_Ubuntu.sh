@@ -61,6 +61,13 @@ fi
 if systemctl is-active --quiet apache2 && systemctl is-active --quiet tomcat${TOMCAT_VERSION}; then
     echo "Apache (80), Tomcat (8080) install Complete!"
     echo "The Client for Tomcat WAS: http://[APACHE_IP]/app/ "
+    echo ""
+    echo "--------------------------------------------------"
+    echo "WAS Distribution dir info"
+    echo "Copy the compiled WAR file to the following directory:"
+    echo "--> /var/lib/tomcat${TOMCAT_VERSION}/webapps/"
+    echo "--------------------------------------------------"
+
 else
     echo "fail to install or excution for the Service"
     exit 1
